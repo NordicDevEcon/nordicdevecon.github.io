@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordic Conference on Development Economics (NCDE)</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2c3e50;
+            line-height: 1.7;
+            background: #fff;
+        }
+
+        /* ── Navigation ── */
+        nav {
+            position: fixed; top: 0; width: 100%; z-index: 100;
+            background: rgba(255,255,255,0.97);
+            border-bottom: 1px solid #e0e0e0;
+            backdrop-filter: blur(6px);
+        }
+        nav .nav-inner {
+            max-width: 1100px; margin: 0 auto;
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0.8rem 2rem;
+        }
+        nav .logo { font-weight: 700; font-size: 1.15rem; color: #1a3a5c; letter-spacing: 0.5px; }
+        nav ul { list-style: none; display: flex; gap: 2rem; }
+        nav a { text-decoration: none; color: #4a5568; font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+        nav a:hover { color: #1a3a5c; }
+
+        /* ── Hero ── */
+        .hero {
+            padding: 10rem 2rem 5rem;
+            text-align: center;
+            background: linear-gradient(135deg, #1a3a5c 0%, #2a6496 100%);
+            color: #fff;
+        }
+        .hero h1 { font-size: 2.6rem; font-weight: 700; margin-bottom: 0.6rem; }
+        .hero p { font-size: 1.15rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+
+        /* ── Sections ── */
+        section { padding: 5rem 2rem; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .section-title {
+            font-size: 1.8rem; font-weight: 700; color: #1a3a5c;
+            margin-bottom: 1.5rem; position: relative; padding-bottom: 0.6rem;
+        }
+        .section-title::after {
+            content: ''; position: absolute; left: 0; bottom: 0;
+            width: 50px; height: 3px; background: #2a6496; border-radius: 2px;
+        }
+
+        /* ── About ── */
+        .about-text p { margin-bottom: 1rem; max-width: 820px; font-size: 1.05rem; color: #444; }
+
+        /* ── NCDE 2026 card ── */
+        .highlight-card {
+            background: linear-gradient(135deg, #f0f6fc 0%, #e8f0f8 100%);
+            border-left: 4px solid #2a6496;
+            border-radius: 8px;
+            padding: 2.5rem;
+            max-width: 820px;
+        }
+        .highlight-card h3 { font-size: 1.35rem; color: #1a3a5c; margin-bottom: 1rem; }
+        .highlight-card .detail { margin-bottom: 0.55rem; font-size: 1.02rem; color: #444; }
+        .highlight-card .detail strong { color: #1a3a5c; }
+        .highlight-card .btn {
+            display: inline-block; margin-top: 1.2rem; padding: 0.65rem 1.6rem;
+            background: #2a6496; color: #fff; border-radius: 5px;
+            text-decoration: none; font-weight: 600; font-size: 0.95rem;
+            transition: background 0.2s;
+        }
+        .highlight-card .btn:hover { background: #1a3a5c; }
+
+        /* ── Table ── */
+        .table-wrapper { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+        thead { background: #1a3a5c; color: #fff; }
+        th { padding: 0.85rem 1rem; text-align: left; font-weight: 600; white-space: nowrap; }
+        td { padding: 0.75rem 1rem; border-bottom: 1px solid #e8ecf0; vertical-align: top; }
+        tbody tr:hover { background: #f7f9fc; }
+        td a { color: #2a6496; text-decoration: none; font-weight: 500; }
+        td a:hover { text-decoration: underline; }
+        .cancelled { color: #999; font-style: italic; }
+
+        /* ── Footer ── */
+        footer {
+            text-align: center; padding: 2.5rem 2rem;
+            background: #1a3a5c; color: rgba(255,255,255,0.75); font-size: 0.9rem;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            nav ul { gap: 1rem; }
+            section { padding: 3rem 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <div class="nav-inner">
+        <span class="logo">NCDE</span>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#ncde2026">NCDE 2026</a></li>
+            <li><a href="#editions">Previous Editions</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <h1>Nordic Conference on Development Economics</h1>
+</section>
+
+<!-- About -->
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-text">
+            <p>This annual conference serves as a meeting point for development economists active in the Nordic countries, but is also targeted more generally to academic researchers in Europe and beyond.</p>
+            <p>The conference was established in 2002, led by Magnus Hatlebakk and Finn Tarp. Since its inception, the conference has rotated among universities in Denmark, Finland, Norway, and Sweden. Each edition features keynote lectures by internationally renowned scholars, and provides a platform for both established and early-career researchers to share new empirical and theoretical work that can inform development policy.</p>
+        </div>
+    </div>
+</section>
+
+<!-- NCDE 2026 -->
+<section id="ncde2026" style="background:#fafcfe;">
+    <div class="container">
+        <h2 class="section-title">NCDE 2026</h2>
+        <div class="highlight-card">
+            <h3>Linnaeus University, V&auml;xj&ouml;, Sweden</h3>
+            <div class="detail"><strong>Keynote Speakers:</strong> Jonas Hjort, Rohini Somanathan</div>
+            <a class="btn" href="https://lnu.se/en/meet-linnaeus-university/current/events/2026/conferences/ncde-2026/" target="_blank" rel="noopener">Visit Conference Website &rarr;</a>
+        </div>
+    </div>
+</section>
+
+<!-- Previous Editions -->
+<section id="editions">
+    <div class="container">
+        <h2 class="section-title">Previous Editions</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Host Institution</th>
+                        <th>Keynote Speakers</th>
+                        <th>Program</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2025</td>
+                        <td>OsloMet, Oslo, Norway</td>
+                        <td>Eliana La Ferrara, Kalle Moene</td>
+                        <td><a href="https://web.archive.org/web/20250717100432/https://www.oslomet.no/en/about/events/ncde-2025" target="_blank" rel="noopener">Program</a></td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td>University of Copenhagen, Denmark</td>
+                        <td>Santiago Levy, Jenny Aker</td>
+                        <td><a href="https://econ.ku.dk/derg/calendar/workshops/ncde-2024/" target="_blank" rel="noopener">Program</a></td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>University of Gothenburg, Sweden</td>
+                        <td>Martina Bj&ouml;rkman Nyqvist, E. Somanathan, Chris Blattman</td>
+                        <td><a href="https://www.gu.se/en/economics/nordic-conference-in-development-economics-ncde-2023" target="_blank" rel="noopener">Program</a></td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>Aalto University, Helsinki, Finland</td>
+                        <td>Leonard Wantchekon, Karen Macours</td>
+                        <td><a href="https://blogs.aalto.fi/ncde2022/" target="_blank" rel="noopener">Program</a></td>
+                    </tr>
+                    <tr>
+                        <td>2021</td>
+                        <td>NHH Norwegian School of Economics, Bergen, Norway (online)</td>
+                        <td>Axel Dreher, Tessa Bold</td>
+                        <td><a href="https://www.nhh.no/en/calendar/fair/2021/nordic-conference-in-development-economics/" target="_blank" rel="noopener">Program</a></td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td colspan="3" class="cancelled">Cancelled</td>
+                    </tr>
+                    <tr>
+                        <td>2019</td>
+                        <td>University of Copenhagen, Denmark</td>
+                        <td>Travis Lybbert, Marc F. Bellemare</td>
+                        <td><a href="https://econ.ku.dk/derg/calendar/workshops/17062019/" target="_blank" rel="noopener">Program</a></td>
+                    </tr>
+                    <tr>
+                        <td>2018</td>
+                        <td>UNU-WIDER, Helsinki, Finland</td>
+                        <td>Sonia Bhalotra, Ravi Kanbur</td>
+                        <td><a href="https://www.wider.unu.edu/event/2018-nordic-conference-development-economics" target="_blank" rel="noopener">Program</a></td>
+                    </tr>
+                    <tr>
+                        <td>2017</td>
+                        <td>Institute for International Economic Studies, Stockholm University, Sweden</td>
+                        <td>Oriana Bandiera, Jakob Svensson</td>
+                        <td><a href="https://www.iies.su.se/NCDEconference201706.pdf" target="_blank" rel="noopener">Program</a></td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>University of Oslo, Norway</td>
+                        <td>Bertil Tungodden</td>
+                        <td><a href="https://www.sv.uio.no/esop/english/events/conferences/" target="_blank" rel="noopener">Program</a></td>
+                    </tr>
+                    <tr>
+                        <td>2015</td>
+                        <td>University of Copenhagen, Denmark</td>
+                        <td>Peter Lanjouw, Jim Davies</td>
+                        <td><a href="https://econ.ku.dk/derg/calendar/workshops/15062015" target="_blank" rel="noopener">Program</a></td>
+                    </tr>
+                    <tr>
+                        <td>2014</td>
+                        <td>UNU-WIDER, Helsinki, Finland</td>
+                        <td>Stefan Dercon, Jean-Philippe Platteau</td>
+                        <td><a href="https://www.wider.unu.edu/event/nordic-conference-development-economics-2014" target="_blank" rel="noopener">Program</a></td>
+                    </tr>
+                    <tr>
+                        <td>2013</td>
+                        <td>University of Bergen, Norway</td>
+                        <td>Martin Ravallion, Emanuelle Auriol</td>
+                        <td><a href="https://paraplyen.prototypes.no/paraplyen/arkiv/2013/juni/to-nordisk/" target="_blank" rel="noopener">Program</a></td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>University of Gothenburg, Sweden</td>
+                        <td>Chris Adam, James Robinson</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <td>2011</td>
+                        <td>University of Copenhagen, Denmark</td>
+                        <td>John Page, Tony Venables</td>
+                        <td><a href="https://www.wider.unu.edu/event/nordic-conference-development-economics-2011-ncde11" target="_blank" rel="noopener">Program</a></td>
+                    </tr>
+                    <tr>
+                        <td>2010</td>
+                        <td>Helsinki, Finland</td>
+                        <td>Luc Soete</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <td>2009</td>
+                        <td>Norwegian University of Life Sciences, &Aring;s, Norway</td>
+                        <td>Michael Carter, Klaus Deininger</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <td>2008</td>
+                        <td>Stockholm, Sweden</td>
+                        <td>Esther Duflo</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <td>2007</td>
+                        <td>Copenhagen, Denmark</td>
+                        <td>Alain de Janvry, Chris Udry</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <td>2006</td>
+                        <td>Oslo, Norway</td>
+                        <td>Todd Sandler</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <td>2005</td>
+                        <td>Helsinki, Finland</td>
+                        <td>Rohini Pande</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <td>2004</td>
+                        <td>University of Gothenburg, Sweden</td>
+                        <td>Paul Collier, Tim Besley</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <td>2003</td>
+                        <td>Copenhagen, Denmark</td>
+                        <td>Paul Streeten, Eric Thorbecke</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <td>2002</td>
+                        <td>Bergen, Norway</td>
+                        <td>Shanta Devarajan, Kaushik Basu</td>
+                        <td>&mdash;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    &copy; 2026 Nordic Conference on Development Economics
+</footer>
+
+<!-- Smooth scrolling -->
+<script>
+    document.querySelectorAll('nav a[href^="#"]').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
