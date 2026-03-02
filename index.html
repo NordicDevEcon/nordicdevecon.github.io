@@ -94,9 +94,30 @@
 
         /* ── Responsive ── */
         @media (max-width: 768px) {
-            .hero h1 { font-size: 1.8rem; }
-            nav ul { gap: 1rem; }
-            section { padding: 3rem 1.2rem; }
+            nav .nav-inner { padding: 0.6rem 1rem; }
+            nav .logo { font-size: 1rem; }
+            nav ul { gap: 0.8rem; }
+            nav a { font-size: 0.85rem; }
+            .hero { padding: 7rem 1.2rem 3rem; }
+            .hero h1 { font-size: 1.6rem; }
+            section { padding: 2.5rem 1rem; }
+            .section-title { font-size: 1.4rem; }
+            .about-text p { font-size: 0.95rem; }
+            .highlight-card { padding: 1.5rem; }
+            .highlight-card h3 { font-size: 1.15rem; }
+            table { font-size: 0.85rem; }
+            th, td { padding: 0.6rem 0.6rem; }
+        }
+
+        @media (max-width: 480px) {
+            nav .nav-inner { flex-direction: column; gap: 0.4rem; }
+            nav ul { gap: 1.2rem; }
+            .hero { padding: 6.5rem 1rem 2.5rem; }
+            .hero h1 { font-size: 1.3rem; }
+            .section-title { font-size: 1.25rem; }
+            .highlight-card { padding: 1.2rem; }
+            th, td { padding: 0.5rem 0.4rem; }
+            table { font-size: 0.78rem; }
         }
     </style>
 </head>
@@ -125,7 +146,8 @@
         <h2 class="section-title">About</h2>
         <div class="about-text">
             <p>This annual conference serves as a meeting point for development economists active in the Nordic countries, but is also targeted more generally to academic researchers in Europe and beyond.</p>
-            <p>The conference was established in 2002, led by Magnus Hatlebakk and Finn Tarp. Since its inception, the conference has rotated among universities in Denmark, Finland, Norway, and Sweden. Each edition features keynote lectures by internationally renowned scholars, and provides a platform for both established and early-career researchers to share new empirical and theoretical work that can inform development policy.</p>
+            <p>The conference was established in 2002, led by Finn Tarp and Magnus Hatlebakk. Since its inception, the conference has rotated among universities in Denmark, Finland, Norway, and Sweden. Each edition features keynote lectures by internationally renowned scholars, and provides a platform for both established and early-career researchers to share new empirical and theoretical work that can inform development policy.</p>
+            <p>NCDE normally does not have a conference fee. The conference dinner and other meals are provided by the organizers. Conference participants are expected to finance travel and accommodation by their own means or by support from their home universities.</p>
         </div>
     </div>
 </section>
@@ -177,7 +199,7 @@
                     </tr>
                     <tr>
                         <td>2022</td>
-                        <td>Aalto University, Helsinki, Finland</td>
+                        <td>Helsinki Graduate School of Economics, Helsinki, Finland</td>
                         <td>Leonard Wantchekon, Karen Macours</td>
                         <td><a href="https://blogs.aalto.fi/ncde2022/" target="_blank" rel="noopener">Program</a></td>
                     </tr>
@@ -189,7 +211,7 @@
                     </tr>
                     <tr>
                         <td>2020</td>
-                        <td colspan="3" class="cancelled">Cancelled</td>
+                        <td colspan="3" class="cancelled">Cancelled due to COVID-19</td>
                     </tr>
                     <tr>
                         <td>2019</td>
@@ -229,9 +251,9 @@
                     </tr>
                     <tr>
                         <td>2013</td>
-                        <td>University of Bergen, Norway</td>
+                        <td>NHH Norwegian School of Economics, Bergen, Norway</td>
                         <td>Martin Ravallion, Emanuelle Auriol</td>
-                        <td><a href="https://paraplyen.prototypes.no/paraplyen/arkiv/2013/juni/to-nordisk/" target="_blank" rel="noopener">Program</a></td>
+                        <td><a href="PDF-programs/NCDE-2013-NHH.pdf" target="_blank" rel="noopener">Program</a></td>
                     </tr>
                     <tr>
                         <td>2012</td>
@@ -307,7 +329,8 @@
 
 <!-- Footer -->
 <footer>
-    &copy; 2026 Nordic Conference on Development Economics
+    <p>&copy; 2026 Nordic Conference on Development Economics</p>
+    <p style="margin-top:0.8rem;">This website is maintained by Fenella Carpena (Oslo Metropolitan University).<br>Please feel free to send an email for any questions or corrections.</p>
 </footer>
 
 <!-- Smooth scrolling -->
